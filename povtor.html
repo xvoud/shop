@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Проверьте, можете ли вы путешествовать в одиночку. Укажите возраст в поле</h1>
+	<input class="num">
+	<button class="btn">Нажми</button>
+<script type="text/javascript">
+
+	let input = document.querySelector(".num");
+	let btn = document.querySelector(".btn");
+	
+	btn.onclick = function(){
+		if(input.value >= 18){
+			alert("Вам можно путешествовать без сопровождения родителя");
+		}else{
+			alert("Ждите своего 18-летия")
+		}
+	}
+</script>
+</body>
+</html>
